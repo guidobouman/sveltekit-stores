@@ -1,13 +1,9 @@
 <script lang="ts">
-  let count = 0;
-
-  function increment() {
-    count += 1;
-  }
+  import { count, increment } from '$stores/counter';
 </script>
 
 <button on:click={increment}>
-  Clicks: {count}
+  Clicks: {$count}
 </button>
 
 <style lang="scss">
